@@ -1,0 +1,585 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-primary {
+    background-color: #34373E !important;
+}
+
+.btn-primary {
+  background-color: #34373E;
+  border: none;
+}
+
+.btn-secondary {
+    background-color: #d06b18;
+    border: none;
+}
+
+/* Buttons */
+.btn-outline-secondary {
+  border-color: #d06b18;
+  color: #d06b18;
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  background-color: #d06b18;
+  border-color: #d06b18;
+}
+
+.btn-secondary {
+  color: white;
+}
+
+.btn-secondary:hover {
+  color: white;
+  background-color: #d6803a;
+}
+
+.light{
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 40%, #ffffff 50%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,0.1) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 40%,#ffffff 50%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.1) 100%);
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 40%,#ffffff 50%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.1) 100%);
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 40%,#ffffff 50%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.1) 100%);
+	background: linear-gradient(135deg,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 40%,#ffffff 50%,rgba(255,255,255,0.1) 60%,rgba(255,255,255,0.1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,255,255,0.1)', endColorstr='rgba(255,255,255,0.1)',GradientType=1 );
+	background-repeat: no-repeat;  
+	background-position:0px;
+	background-size:300%;  
+}
+
+.light:hover {
+  animation:light 1s;
+  -webkit-animation:light 1s;
+}
+
+@keyframes light {
+  0% {background-position:-800px;}
+  100% {background-position:0px;}
+}
+        
+@-webkit-keyframes light {
+  0% {background-position:-800px;}
+  100% {background-position:0px;}
+}
+
+/* Preloader */
+#preloader {
+  width: 100vw; 
+  height: 100vh; 
+  background: #000000; 
+  position: fixed; 
+  display: grid; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.loading__text {
+  letter-spacing: 30px; 
+  color: #fff; 
+  font-weight: 700; 
+  position: relative; 
+  top: -50px; 
+  pointer-events: none;
+  user-select: none;  
+  text-align: center;
+}
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 3000; 
+  position: fixed; 
+  margin: auto; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  width: 400px; 
+  border: 0; 
+  height: 1px; 
+  overflow: hidden; 
+}
+
+.pace .pace-progress {
+  max-width: 400px; 
+  position: absolute; 
+  z-index: 2000; 
+  top: 0; 
+  right: 100%; 
+  height: 100%; 
+  width: 100%; 
+  background: #fff;
+}
+
+.content-container {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  transform: translate(0, 0);
+  z-index: 99999; 
+  opacity: 0; 
+  background-color: white;
+}
+
+
+/* Navbar */
+.navbar {
+  padding-top: 1.2rem;
+  padding-bottom: 0.6rem;
+  background-color: white;
+}
+
+.navbar-left {
+  padding-left: 20px;
+}
+
+a.nav-link {
+  position: relative;
+  font-weight: 700;
+}
+
+a.navbar-link .active {
+  color: #34373E;
+}
+
+.navbar-link span {
+  font-size: 12px;
+  padding: 2px 8px 1px 8px;
+  left: 45px;
+  color: white;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+/* Index Page */
+.index-header-container {
+  width: 100vw;
+}
+
+.index-header-content {
+  width: auto;
+  height: 750px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index-header-text h1 {
+  padding-top: 250px;
+  font-size: 120px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.index-header-text h2 {
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+section {
+  position: relative;
+}
+
+.banner-container {
+  position: relative;
+  color: white;
+}
+
+.banner {
+  position: absolute;
+  top: -150px;
+  width: 100%;
+  z-index: 100;
+}
+
+.card-body h3 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.card-body .line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.about-container {
+  padding: 242px 0 50px 0;
+}
+
+.blair-img {
+  width: 100%;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  cursor: pointer;
+}
+
+.comments-container {
+  padding: 125px 0;
+  margin-bottom: -47px;
+}
+
+.carousel-item div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-item div:before {
+  width: 50%;
+  margin: 0 auto;
+  width: 36px;
+  height: 36px;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  position: absolute;
+  content: "";
+  left: 20%;
+  top: 0;
+  background: url('/assets/images/quote-left-solid.svg');
+}
+
+.carousel-item div:after {
+  width: 36px;
+  height: 36px;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  position: absolute;
+  z-index: 3000;
+  content: "";
+  right: 20%;
+  bottom: 0;
+  background: url('/assets/images/quote-right-solid.svg');
+}
+
+.carousel-item div h2 {
+  font-weight: bold;
+}
+
+.carousel-item div p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+  
+#contact ul li {
+  padding: 2px 0;
+}
+
+#contact ul li:hover{
+  cursor: pointer;
+}
+
+
+/* Header for All Pages */
+.header-content {
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-text h1 {
+  padding-top: 180px;
+  font-size: 120px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+  /* About Page */
+.about-content {
+  padding: 50px 0;
+}
+
+/* Contact Page */
+.contact-content {
+  padding-top: 100px;
+}
+
+.contact-list li span i {
+  margin-right: 15px;
+}
+
+/* Practice Areas */
+.practice-area-content {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+}
+
+.square {
+  position: relative;
+  overflow: hidden;
+}
+
+.square.square1 {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.square .service-img {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.success-container h1 {
+  color: green;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-collapse {
+    position: absolute;
+    left: 0px;
+    top: 68px;
+    background-color: white;
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  .index-header-content {
+    height: 400px;
+  }
+
+  .index-header-text h1 {
+    padding-top: 80px;
+    font-size: 75px
+  }
+
+  .index-header-text h2 {
+    font-size: 30px
+  }
+
+  .banner-container h3 {
+    text-align: center;
+  }
+
+  .banner-container .btn-col {
+    text-align: center;
+  }
+
+  .banner {
+    width: 96.5%;
+    top: -50px;
+  }
+
+  .about-container {
+    padding: 500px 0 50px 0;
+  }
+
+  .blair-img {
+    width: 400px;
+    margin: 0 auto 20px auto;
+  }
+
+  .header-content {
+    height: 300px;
+  }
+
+  .header-text h1 {
+    font-size: 50px;
+    padding-top: 125px;
+  }
+
+  /* Practice Areas */
+  .square.square1 {
+    width: 325px;
+    height: 325px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Navbar */
+  .navbar-collapse {
+    position: absolute;
+    left: 0px;
+    top: 68px;
+    background-color: white;
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  /* Index Page */
+  .index-header-content {
+    height: 300px;
+  }
+
+  .index-header-text h1 {
+    padding-top: 80px;
+    font-size: 30px
+  }
+
+  .index-header-text h2 {
+    font-size: 20px
+  }
+
+  .banner-container h3 {
+    text-align: center;
+  }
+  .banner-container .btn-col {
+    text-align: center;
+  }
+
+  .banner {
+    width: 93.5%;
+    top: -50px;
+  }
+
+  .about-container {
+    padding: 575px 0 50px 0;
+  }
+
+  .blair-img {
+    width: 400px;
+    margin: 0 auto 20px auto;
+  }
+
+  /* Header for All Pages */
+  .header-content {
+    height: 300px;
+  }
+
+  .header-text h1 {
+    font-size: 50px;
+    padding-top: 125px;
+  }
+
+  /* Practice Areas */
+  .square.square1 {
+    width: 300px;
+    height: 300px;
+    float: none;
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Navbar */
+  .navbar-collapse {
+    position: absolute;
+    left: 0px;
+    top: 68px;
+    background-color: white;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  /* Index Page */
+  .index-header-content {
+    height: 300px;
+  }
+
+  .index-header-text h1 {
+    padding-top: 80px;
+    font-size: 30px
+  }
+
+  .index-header-text h2 {
+    font-size: 20px
+  }
+
+  .banner-container h3 {
+    text-align: center;
+  }
+  .banner-container .btn-col {
+    text-align: center;
+  }
+
+  .banner {
+    width: 93.5%;
+    top: -50px;
+  }
+
+  .about-container {
+    padding: 575px 0 50px 0;
+  }
+
+  .blair-img {
+    width: 300px;
+    margin: 0 auto 20px auto;
+  }
+
+  .carousel-item div:before {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+  }
+  
+  .carousel-item div:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Header for All Pages */
+  .header-content {
+    width: 100%;
+    height: 300px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+    padding-top: 125px;
+  }
+
+  /* Practice Areas */
+  .square {
+    position: relative;
+    overflow:auto;
+  }
+  
+  .square.square1 {
+    width: 250px;
+    height: 250px;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+
+  .square .service-img {
+    width:100%;
+    height:100%;
+    position:relative;
+    background-size: cover;
+    background-position: center;
+  }
+}
