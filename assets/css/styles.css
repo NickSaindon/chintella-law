@@ -233,10 +233,13 @@ section {
 
 .card {
   border: none;
+  border-radius: 5px;
 }
 
 .card img {
   cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .comments-container {
@@ -324,6 +327,10 @@ section {
   padding: 50px 0;
 }
 
+.about-chintella-law {
+  padding: 0 0 50px 0;
+}
+
 /* Contact Page */
 .contact-content {
   padding-top: 100px;
@@ -338,6 +345,7 @@ section {
   position: relative;
   width: 100%;
   padding: 50px;
+  min-height: 460px;
 }
 
 .square {
@@ -359,8 +367,6 @@ section {
   background-size: cover;
   background-position: center;
 }
-
-
 
 .success-container h1 {
   color: green;
